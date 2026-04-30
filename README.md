@@ -147,23 +147,15 @@
 
 ---
 
-## 脚本文件
+## 数据文件清单
 
 | 文件 | 说明 |
 |------|------|
-| `run_shap_nooc_ablation.py` | 任务一 + 三A + 三B 的运行脚本（SHAP + No-OC + No-count + No-pupil） |
-| `run_ccf_surrogate_v2.py` | 任务二的运行脚本（CCF circular-shift surrogate 检验） |
-
-## 复现方法
-
-```bash
-cd /path/to/cognitive_color/paper_supplementary
-python run_shap_nooc_ablation.py   # 任务一 + 三A/B，约 10 分钟
-python run_ccf_surrogate_v2.py     # 任务二，约 30 分钟
-```
-
-依赖：
-- `unified_data_cache.npz` 位于 `five_class_results/final_results_for_paper/unified_results/`
-- 原始眼动数据位于 `dataset/down/{b1-b5}/{pid}/{pid}_eye.xlsx`
-- 原始 fNIRS 数据位于 `dataset/fnirs_data/{b1-b5}/{pid}/{pid}_oxy.xlsx`
-- Python 包：numpy, pandas, scikit-learn, xgboost, shap, scipy, openpyxl
+| `shap_modality_full.xlsx` / `.csv` | 任务一：Full Fusion 4-seed SHAP 模态贡献比例 |
+| `shap_modality_nooc.xlsx` / `.csv` | 任务三B：No-OC SHAP 模态贡献比例 |
+| `shap_detail.json` | SHAP 详细结果（per seed per task） |
+| `classification_results.xlsx` / `.csv` | 任务三A：分类性能对比（Full / No-OC / No-count / No-pupil） |
+| `surrogate_results_v2.csv` | 任务二：CCF surrogate 检验逐条结果 |
+| `task_significance_proportion.csv` | 任务二：每类任务显著配对比例 |
+| `figure_data_obs_vs_surrogate.csv` | 任务二：observed vs surrogate |r_peak| 分布数据 |
+| `task4_ccf_consistency.csv` | 任务四：CCF 方向一致性统计 |
