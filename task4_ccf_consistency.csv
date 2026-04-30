@@ -1,0 +1,6 @@
+Task,group_median_lag_frames,group_median_lag_s,dominant_direction,roi_consistency,roi_consistency_pct
+WM,3.0,0.15,eye先于fNIRS,6/9,66.7
+SR,-1.0,-0.05,fNIRS先于眼动,9/9,100.0
+LI,-1.0,-0.05,fNIRS先于眼动,9/9,100.0
+EF,-1.0,-0.05,fNIRS先于眼动,9/9,100.0
+VA,-1.0,-0.05,fNIRS先于眼动,9/9,100.0
